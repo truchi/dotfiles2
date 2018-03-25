@@ -1,5 +1,7 @@
-source params.zsh
-source options.zsh
-source compsys.zsh
-source zle.zsh
-source prompt.zsh
+DOTFILES=$(readlink -e ~/.dotfiles)
+
+source "$DOTFILES/zsh/params.zsh"
+source "$DOTFILES/zsh/options.zsh"
+source "$DOTFILES/zsh/compsys.zsh"
+source "$DOTFILES/zsh/zle.zsh"
+source "$DOTFILES/zsh/prompt.zsh"
