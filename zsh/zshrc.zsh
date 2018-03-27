@@ -57,6 +57,13 @@ setopt   EXTENDED_GLOB				# ‘#’, ‘~’ and ‘^’ treated as pattern part
 setopt   GLOB_DOTS				# Matches dotfiles
 
 #
+# Environment variables
+#
+export VISUAL=nano
+export EDITOR=$VISUAL
+
+
+#
 # Misc
 #
 unsetopt BEEP					# Beeps on ZLE errors
