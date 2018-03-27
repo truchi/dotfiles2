@@ -31,6 +31,19 @@ setopt   HIST_NO_FUNCTIONS 			# Forgets function definitions (after next command
 setopt   HIST_FCNTL_LOCK			# Locks with OS locking system
 
 #
+# Directory navigation
+#
+DIRSTACKSIZE=1000				# Max size of directory stack
+
+setopt   CHASE_LINKS				# `cd` resovles symbolic links
+setopt   AUTO_CD				# Changes directory if command is not a command
+setopt   AUTO_PUSHD				# `cd` pushes to directory stack
+setopt   PUSHD_IGNORE_DUPS			# Dedups directory stack
+setopt   PUSHD_SILENT				# Silences `pushd`
+setopt   PUSHD_MINUS				# `cd -` from most recent, `cd +n` from oldest
+setopt   PUSHD_TO_HOME				# `pushd` without args goes to $HOME
+
+#
 # Prompts
 #
 autoload -Uz promptinit
@@ -43,12 +56,11 @@ prompt adam2
 unsetopt BEEP					# Beeps on ZLE errors
 unsetopt HIST_BEEP				# Beeps on history errors
 unsetopt LIST_BEEP				# Beeps on completions errors
-setopt   AUTO_CD				# cd if not a command
 setopt   EXTENDED_GLOB				# ‘#’, ‘~’ and ‘^’ treated as pattern part for file extension
 setopt   CORRECT 				# Tries to correct misspelled commands (no,yes,abort,edit)
 setopt   INTERACTIVE_COMMENTS			# Allows comments in interactive shells
-
-
+setopt   SHORT_LOOPS				# Allows terser grammar
+setopt   NOTIFY					# Notifies when bg jobs finish right away
 
 
 
