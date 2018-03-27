@@ -21,7 +21,6 @@ SAVEHIST=1024					# Max number of events stored in history file
 
 setopt   SHARE_HISTORY				# Shares history among sessions
 setopt   EXTENDED_HISTORY			# Saves events with time and duration
-setopt   BANG_HIST				# Performs textual history expansion (!! will work)
 setopt   HIST_IGNORE_DUPS			# Ignores successive dups
 setopt   HIST_IGNORE_ALL_DUPS			# Removes older dups in history
 setopt   HIST_SAVE_NO_DUPS			# Doesn't write dups
@@ -64,8 +63,6 @@ unsetopt BEEP					# Beeps on ZLE errors
 unsetopt HIST_BEEP				# Beeps on history errors
 unsetopt LIST_BEEP				# Beeps on completions errors
 setopt   INTERACTIVE_COMMENTS			# Allows comments in interactive shells
-setopt   SHORT_LOOPS				# Allows terser grammar
-setopt   NOTIFY					# Notifies when bg jobs finish right away
 
 
 
