@@ -9,6 +9,8 @@
     ~/.dotfiles: ''
     ~/.zshrc: zsh/zshrc.zsh
     ~/.spacemacs: spacemacs/spacemacs.el
+    ~/.fonts: fonts/
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [fc-cache -f ~/.fonts, Rebuild font cache]
