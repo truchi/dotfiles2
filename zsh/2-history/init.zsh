@@ -20,4 +20,4 @@ setopt   HIST_NO_FUNCTIONS              # Forgets function definitions (after ne
 setopt   HIST_FCNTL_LOCK                # Locks with OS locking system
 
 # Auto suggestions plugins
-source zsh-autosuggestions/zsh-autosuggestions.zsh
+source "$DIR/zsh-autosuggestions/zsh-autosuggestions.zsh"

@@ -4,9 +4,9 @@
 ROOT=$(readlink -e ~/.dotfiles) # Resolved path of dotdirectory
 DIRS=($(ls -vd $ROOT/zsh/*(/))) # Zsh folders, natural sort
 
-for dir in $DIRS
+for DIR in $DIRS
 do
-  source $dir/init.zsh
+  source $DIR/init.zsh
 done
 
 unset ROOT
