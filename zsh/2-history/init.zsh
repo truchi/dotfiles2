@@ -3,7 +3,7 @@
 #
 HISTFILE=~/.zhistory                    # History file location
 HISTSIZE=1024                           # Max number of events stored in internal history list
-SAVEHIST=1024                           # Max number of events stored in history file
+SAVEHIST=$HISTSIZE                      # Max number of events stored in history file
 
 setopt   SHARE_HISTORY                  # Shares history among sessions
 setopt   EXTENDED_HISTORY               # Saves events with time and duration
