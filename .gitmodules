@@ -1,3 +1,6 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+[submodule "zsh/2-history/zsh-autosuggestions"]
+	path = zsh/2-history/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
