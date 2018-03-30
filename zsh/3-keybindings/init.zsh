@@ -1,1 +1,4 @@
-bindkey -e
+#
+# Keybindings
+#
+bindkey -e                              # Emacs keymap
