@@ -8,6 +8,7 @@
 - link:
     ~/.dotfiles: ''
     ~/.zshrc: zsh/zshrc.zsh
+    ~/.spacemacs: spacemacs/spacemacs.el
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
