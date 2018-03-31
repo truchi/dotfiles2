@@ -1,8 +1,11 @@
 #
-# Directory navigation
+# Navigation
 #
+
+# Parameters
 DIRSTACKSIZE=1000                       # Max size of directory stack
 
+# Options
 setopt   CHASE_LINKS                    # `cd` resovles symbolic links
 setopt   AUTO_CD                        # Changes directory if command is not a command
 setopt   AUTO_PUSHD                     # `cd` pushes to directory stack
